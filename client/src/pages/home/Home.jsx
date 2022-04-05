@@ -9,6 +9,13 @@ const Home = () => {
     return data.filter(item => item.first_name.toLowerCase().includes(query));
   }
 
+  let num = 5;
+
+  num++;
+
+  console.log(num)
+
+
   return (
     <div>
       <input type="text" placeholder='Search..' className="search" onChange={element => setQuery(element.target.value)} />
@@ -17,4 +24,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

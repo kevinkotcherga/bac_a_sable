@@ -9,7 +9,7 @@ const Table = ({ data }) => {
           <th>Surname</th>
           <th>Email</th>
         </tr>
-        {data.map((item) => (
+        {data.slice(0,5).map((item) => (
         <tr key={item.id}>
           <th>{item.first_name}</th>
           <th>{item.last_name}</th>
